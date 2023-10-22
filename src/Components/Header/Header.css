@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    color: blueviolet;
+    padding: 10px 10px 0px 10px ;
+    border-bottom: 3px solid blueviolet;
+}

@@ -1,0 +1,42 @@
+.popUp{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.6);
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popUp .popUp-Content{
+    width: 400px;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 4px rgb(0,0,0);
+}
+
+.popUp .popUp-Content input[type=text]{
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+    color: blue;
+}
+
+.popUp .popUp-Content button{
+    padding: 10px;
+    background-color: #0802A3;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
