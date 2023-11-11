@@ -11,7 +11,7 @@ function App() {
   const [updateObj,setUpdateObj] = useState({})
   const [showPop,setShowPop] = useState(false)
   useEffect(()=>{
-    axios.get('http://localhost:8000/api/tasks').then(res=>{
+    axios.get('https://todo-app-server-bcrj.onrender.com/api/tasks').then(res=>{
       setTodolist(res.data)
     }).catch((err)=>console.log(err.message))
   },[])
