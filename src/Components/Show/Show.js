@@ -16,7 +16,7 @@ function Show(props) {
             }
 
             const removeItem = (id) => {
-                axios.delete(`http://localhost:8000/api/tasks/${id}`).then(res=>{
+                axios.delete(`https://todo-app-server-bcrj.onrender.com/api/tasks/${id}`).then(res=>{
                     console.log(res)
                     props.deleteItem(res.data)
                 }).catch(err=>console.log(err.message))
