@@ -6,7 +6,7 @@ import {FaEdit,FaTrashAlt,FaCheckSquare} from 'react-icons/fa'
 function Show(props) {
     const todolist = props.todolist.map((task,index)=>{
             const isComplete = (item) => {
-                axios.put(`http://localhost:8000/api/tasks/${item._id}`,{
+                axios.put(`https://todo-app-server-bcrj.onrender.com/api/tasks/${item._id}`,{
                     _id : item._id,
                     todo : item.todo,
                     isCompleted : !item.isCompleted,
