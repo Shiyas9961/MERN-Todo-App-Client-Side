@@ -11,7 +11,7 @@ function Update(props) {
             props.removePop()
             return
         }else{
-            axios.put(`http://localhost:8000/api/tasks/${props.updateObj._id}`,{
+            axios.put(`https://todo-app-server-bcrj.onrender.com/api/tasks/${props.updateObj._id}`,{
                 _id : props.updateObj.id,
                 todo : updateVal,
                 isCompleted : props.updateObj.isCompleted
